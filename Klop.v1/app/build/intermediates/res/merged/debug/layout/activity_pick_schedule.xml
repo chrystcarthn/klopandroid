@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="appdeveloper.klop.klop.Activity.PickSchedule">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Atur Jadwal Sendiri" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="0dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginBottom="60dp"
+                        android:paddingRight="0dp">
+
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#999"
+                            android:layout_marginLeft="3dp"
+                            android:text="Centang pada hari yang buka untuk bisa mengisi jam buka dan jam tutup"
+                            android:textColor="@color/secondaryText"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/expandableButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Senin"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton1"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbSenin"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSenin1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSenin1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSenin2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSenin2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/expandableButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Selasa"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton1"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbSelasa"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSelasa1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSelasa1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSelasa2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSelasa2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/expandableButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Rabu"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton2"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbRabu"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperRabu1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edRabu1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperRabu2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edRabu2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/expandableButton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Kamis"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton3"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbKamis"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperKamis1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edKamis1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperKamis2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edKamis2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/expandableButton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Jumat"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton4"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbJumat"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperJumat1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edJumat1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperJumat2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edJumat2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/expandableButton6"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="Sabtu"
+                            android:textColor="@color/secondaryText"
+                            android:textSize="16dp" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton5"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbSabtu"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSabtu1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSabtu1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperSabtu2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edSabtu2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/expandableButton7"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:text="Minggu"
+                            android:textColor="@color/secondaryText" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton5"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#d5efefef"
+                                android:elevation="0dp">
+
+                                <CheckBox
+                                    android:id="@+id/cbMinggu"
+                                    android:text="Buka"
+                                    android:textSize="14sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="25dp"
+                                    android:orientation="horizontal"
+                                    android:outlineProvider="bounds"
+                                    >
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperMinggu1"
+                                        android:layout_width="65dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edMinggu1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:text="00:00"
+                                            android:hint="Jam Buka"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/wrapperMinggu2"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="5dp"
+                                        android:enabled="false">
+
+                                        <EditText
+                                            android:id="@+id/edMinggu2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#999"
+                                            android:focusable="false"
+                                            android:hint="Jam Tutup"
+                                            android:text="00:00"
+                                            android:singleLine="true"
+                                            android:textColor="@color/primaryText"
+                                            android:textSize="14sp" />
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvErrorPickSchedule"
+                            android:layout_marginTop="0dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Harap mengisi jam pada hari yang buka"
+                            android:textSize="10dp"
+                            android:textColor="@color/red"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnDataDetilLanjutkan"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@drawable/btn_selector_yellow"-->
+        <!--android:text="SELESAI"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_marginBottom="30dp"/>-->
+
+    <Button
+        android:id="@+id/btnDataDetilLanjutkan"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_yellow2"
+        android:text="Selesai"
+        android:textColor="@android:color/white"
+      />
+
+
+</RelativeLayout>

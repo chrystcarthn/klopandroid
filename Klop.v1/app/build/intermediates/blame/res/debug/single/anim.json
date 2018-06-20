@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_from_left.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\slide_out_from_left.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_right.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\slide_in_from_right.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\486e38a9e0bc121369fa86b790bd681ae8c02509\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\downtoup.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\downtoup.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\486e38a9e0bc121369fa86b790bd681ae8c02509\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\486e38a9e0bc121369fa86b790bd681ae8c02509\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\expand.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\expand.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_from_right.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\slide_out_from_right.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\modal_out.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\modal_out.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\486e38a9e0bc121369fa86b790bd681ae8c02509\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\error_frame_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\error_frame_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\uptodown.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\uptodown.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\modal_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\modal_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\error_x_in.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\error_x_in.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\success_mask_layout.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\success_mask_layout.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_left.xml",
+        "source": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\c669ad1f90a42883af432379db13cd9ebe5770d7\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\KULIAH\\Smt8\\MasterSkripsi\\Android\\App\\v3.ALPHA.1.3\\Klop.v1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\success_bow_roate.xml",
+        "source": "C:\\Users\\CMDDJ\\.android\\build-cache\\bd46c540248f1faa069acc5a243e1a98f5974342\\output\\res\\anim\\success_bow_roate.xml"
+    }
+]

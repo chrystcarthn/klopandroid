@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:orderInCategory="1"-->
+        <!--myapp:showAsAction="always"-->
+        <!--myapp:actionViewClass="@drawable/ic_search_black_24dp"-->
+        <!--android:title="Cari outlet" />-->
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        myapp:showAsAction="always"
+        myapp:actionViewClass="android.widget.SearchView"
+        android:title="Cari outlet" />
+
+
+    <!--<item-->
+        <!--android:id="@+id/action_filter"-->
+        <!--android:width="24dp"-->
+        <!--android:height="24dp"-->
+        <!--android:orderInCategory="50"-->
+        <!--android:title="Filter"-->
+        <!--app:showAsAction="always">-->
+    <!--</item>-->
+</menu>

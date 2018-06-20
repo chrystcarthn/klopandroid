@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/menu"
+        android:title="Utama" />
+
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@drawable/appointment_png"
+        android:title="Riwayat Reservasi" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_store"-->
+        <!--android:icon="@drawable/store_png"-->
+        <!--android:title="Kelola Outlet" />-->
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/avatar_png"
+        android:title="Akun"/>
+
+</menu>

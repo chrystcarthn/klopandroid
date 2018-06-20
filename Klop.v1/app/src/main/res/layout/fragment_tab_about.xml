@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:scrollbars="vertical"
+	android:background="#40cacaca"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			>
+
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:paddingLeft="15dp"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp"
+				>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+
+						<LinearLayout
+							android:layout_width="333dp"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+							<TextView
+								style="@style/TextComponent.ItemRow"
+								android:layout_width="match_parent"
+								android:layout_height="30dp"
+								android:text="@string/header_phone"
+								android:textAppearance="@style/TextAppearance.Header" />
+
+								<TextView
+									android:id="@+id/tvNoTelp"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="0dp"
+									android:lineSpacingExtra="6dp"
+									android:text="no_telepon"
+									android:textColor="@color/secondaryText"/>
+						</LinearLayout>
+
+
+						<ImageButton
+							android:id="@+id/btnDialUp"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:layout_marginEnd="5dp"
+
+							android:layout_alignParentRight="true"
+							android:layout_alignParentStart="true"
+							android:layout_alignParentTop="true"
+							android:layout_marginStart="10dp"
+							android:layout_marginTop="16dp"
+							android:background="@color/white"
+							android:src="@mipmap/phone" />
+					</LinearLayout>
+
+
+				</LinearLayout>
+			</FrameLayout>
+
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:layout_marginTop="10dp"
+				android:paddingLeft="15dp"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp">
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingBottom="5dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:layout_width="333dp"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView
+							style="@style/TextComponent.ItemRow"
+							android:layout_width="match_parent"
+							android:layout_height="30dp"
+							android:text="@string/alamat"
+							android:textAppearance="@style/TextAppearance.Header" />
+
+
+						<TextView
+							android:paddingBottom="5dp"
+							android:paddingTop="0dp"
+							android:id="@+id/tvAlamat"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:lineSpacingExtra="6dp"
+							android:text="alamat" />
+					</LinearLayout>
+
+					<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+						<!--xmlns:tools="http://schemas.android.com/tools"-->
+
+						<!--android:id="@+id/map"-->
+						<!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+						<!--android:layout_width="50dp"-->
+						<!--android:layout_height="50dp" />-->
+
+					<ImageButton
+						android:id="@+id/btnMap"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="16dp"
+						android:background="@color/white"
+						android:src="@mipmap/location" />
+				</LinearLayout>
+
+
+
+				</LinearLayout>
+			</FrameLayout>
+			<!--</android.support.v7.widget.CardView>-->
+
+
+
+			<!--<android.support.v7.widget.CardView-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_gravity="center"-->
+				<!--android:layout_marginBottom="4dp"-->
+				<!--android:layout_marginLeft="8dp"-->
+				<!--android:layout_marginRight="8dp"-->
+				<!--android:layout_marginTop="4dp"-->
+				<!--app:contentPaddingBottom="8dp"-->
+				<!--app:contentPaddingLeft="8dp"-->
+				<!--app:contentPaddingRight="8dp">-->
+
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:layout_marginTop="10dp"
+				android:paddingLeft="15dp"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingBottom="5dp">
+
+					<TextView
+						style="@style/TextComponent.ItemRow"
+						android:layout_width="match_parent"
+						android:layout_height="30dp"
+						android:text="@string/header_category"
+						android:textAppearance="@style/TextAppearance.Header" />
+
+					<!--<View-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="3dp"-->
+						<!--android:layout_marginBottom="2dp"-->
+						<!--android:layout_marginTop="2dp"-->
+						<!--android:background="@drawable/bottom_shadow" />-->
+
+
+					<TextView
+						android:paddingBottom="3dp"
+						android:paddingTop="0dp"
+						android:id="@+id/tvCategory"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:lineSpacingExtra="6dp"
+						android:text="kategori" />
+
+				</LinearLayout>
+			</FrameLayout>
+			<!--</android.support.v7.widget.CardView>-->
+
+			<!--<android.support.v7.widget.CardView-->
+				<!--android:layout_width="match_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_gravity="center"-->
+				<!--android:layout_marginBottom="4dp"-->
+				<!--android:layout_marginEnd="8dp"-->
+				<!--android:layout_marginStart="8dp"-->
+				<!--android:layout_marginTop="4dp"-->
+				<!--app:contentPaddingBottom="8dp"-->
+				<!--app:contentPaddingLeft="8dp"-->
+				<!--app:contentPaddingRight="8dp">-->
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:layout_marginTop="10dp"
+				android:paddingLeft="15dp"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingBottom="5dp">
+
+					<TextView
+						style="@style/TextComponent.ItemRow"
+						android:layout_width="match_parent"
+						android:layout_height="30dp"
+						android:text="@string/header_schedule"
+						android:textAppearance="@style/TextAppearance.Header" />
+
+					<!--<View-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="3dp"-->
+						<!--android:layout_marginBottom="2dp"-->
+						<!--android:layout_marginTop="2dp"-->
+						<!--android:background="@drawable/bottom_shadow" />-->
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+
+						<TextView
+							android:id="@+id/tvHari"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:lineSpacingExtra="6dp"
+							android:text="hari_buka"
+							android:paddingBottom="3dp"
+							android:paddingTop="0dp"/>
+
+						<TextView
+							android:id="@+id/tvSchedule"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5dp"
+							android:lineSpacingExtra="6dp"
+							android:text="jam_buka"
+							android:paddingBottom="3dp"
+							android:paddingTop="3dp"/>
+					</LinearLayout>
+				</LinearLayout>
+			</FrameLayout>
+			<!--</android.support.v7.widget.CardView>-->
+
+
+			<!--<android.support.v7.widget.CardView-->
+				<!--android:layout_width="392dp"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_gravity="center"-->
+				<!--android:layout_marginBottom="4dp"-->
+				<!--android:layout_marginEnd="8dp"-->
+				<!--android:layout_marginLeft="8dp"-->
+				<!--android:layout_marginRight="8dp"-->
+				<!--android:layout_marginStart="8dp"-->
+				<!--android:layout_marginTop="4dp"-->
+				<!--app:contentPaddingBottom="8dp"-->
+				<!--app:contentPaddingLeft="8dp"-->
+				<!--app:contentPaddingRight="8dp">-->
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:layout_marginTop="10dp"
+				android:paddingLeft="15dp"
+				android:paddingTop="7dp"
+				android:paddingBottom="7dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:paddingBottom="5dp">
+
+					<TextView
+						style="@style/TextComponent.ItemRow"
+						android:layout_width="match_parent"
+						android:layout_height="30dp"
+						android:text="@string/header_facility"
+						android:textAppearance="@style/TextAppearance.Header" />
+
+					<!--<View-->
+					<!--android:layout_width="match_parent"-->
+					<!--android:layout_height="3dp"-->
+					<!--android:layout_marginBottom="2dp"-->
+					<!--android:layout_marginTop="5dp"-->
+					<!--android:background="@drawable/bottom_shadow" />-->
+
+
+					<TextView
+						android:id="@+id/tvFacility"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:lineSpacingExtra="6dp"
+						android:paddingBottom="3dp"
+						android:paddingTop="0dp"
+						android:text="fasilitas" />
+
+				</LinearLayout>
+			</FrameLayout>
+			<!--</android.support.v7.widget.CardView>-->
+
+
+
+		</LinearLayout>
+	</ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

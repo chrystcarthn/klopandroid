@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_centerVertical="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/header"
+            android:background="@color/colorPrimaryDarker">
+            <TextView
+                android:id="@+id/tvJudul"
+                android:text="Foto Ulasan"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                />
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_alignEnd="@+id/tvJudul"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00ffffff"
+                android:src="@drawable/ic_close_black_24dp"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:gravity="left">
+
+
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:id="@+id/layoutfoto2"
+                android:layout_height="wrap_content">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/imgPhoto"
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/add_image2"
+                    android:background="@drawable/background_rectangle"/>
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imgPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Belum ada foto yang dipilih"
+                    android:textSize="10dp"
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih dan unggah foto yang dapat mengulas atau memperlihatkan situasi dan kondisi fisik outlet, perawatan atau kegiatan transaksi"
+                android:textSize="16dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/secondaryText"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/secondaryText"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="Tambah"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="0dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/cordTabRev"
+	android:scrollbars="vertical"
+	android:background="#40cacaca"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvJumlahRev"
+				android:text="Sebanyak 145 ulasan mengatakan..."
+				android:visibility="gone"
+				android:gravity="top"
+				android:textSize="16dp"
+				android:textColor="@color/secondaryText"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+
+			<android.support.v7.widget.RecyclerView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:clipToPadding="false"
+				android:paddingTop="8dp"
+				android:paddingBottom="8dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				tools:listitem="@layout/list_item_review"
+				android:id="@+id/recyclerViewReview"/>
+
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tvEmptyRev"
+		android:text="Belum ada ulasan."
+		android:visibility="gone"
+		android:gravity="top|center"
+		android:layout_marginTop="125dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+
+</android.support.design.widget.CoordinatorLayout>

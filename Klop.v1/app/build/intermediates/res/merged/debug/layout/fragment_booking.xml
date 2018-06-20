@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#40cacaca"
+    tools:context="appdeveloper.klop.klop.Fragment.BookFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:id="@+id/tvTest"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Buat Janji" />-->
+
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/main_swipe2">
+
+        <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewBooking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+
+    </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tvEmptyBooked"
+        android:text="Anda belum pernah melakukan reservasi."
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/ftbReservasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:floating_background_color="@color/white"
+            app:floating_icon="@mipmap/bell"
+            app:floating_title="Permintaan Reservasi"
+            app:floating_title_color="@color/blue"
+            />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Activity.Login">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:background="@drawable/main_header_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/logheader"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_header"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:id="@+id/login_header"
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/login_header"
+            android:id="@+id/phoneWrapper"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/place_autocomplete_prediction_secondary_text"
+            android:textColorHint="#999"
+            app:errorTextAppearance="@style/error_appearance"
+            >
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_header"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="5dp"
+                android:hint="Nomor Telepon"
+                android:inputType="phone"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                android:textColorHint="#999"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@+id/phoneWrapper"
+            android:id="@+id/passWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/place_autocomplete_prediction_secondary_text"
+            android:textColorHint="#999"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="5dp"
+
+                android:hint="Kata Sandi"
+                android:inputType="textPassword"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                android:textColorHint="#999"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <CheckBox
+            android:id="@+id/cbTogglePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/show_pwd"
+            android:layout_marginLeft="250dp"
+            android:layout_below="@+id/passWrapper"
+            android:textColor="#999"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:padding="5dp"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MASUK"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/btn_selector_yellow"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/cbTogglePassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:onClick="onClick" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Belum punya akun? Daftar"/>
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/register"
+                android:textSize="15sp"
+                android:onClick="onClick"
+                android:textColor="@color/colorPrimaryDarker" />
+
+        </LinearLayout>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avloadingIndicatorView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            app:indicator="BallPulse"
+            app:indicator_color="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tunggu sebentar..."
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/avloadingIndicatorView"
+            android:visibility="gone"
+            android:id="@+id/txtloading"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

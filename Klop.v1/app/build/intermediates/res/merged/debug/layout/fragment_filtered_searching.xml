@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/filteredSearching"
+    tools:context="appdeveloper.klop.klop.Activity.FilteredSearching">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Saring Pencarian" />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="0dp">
+
+
+                    <TextView
+                        android:id="@+id/tvBanner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#999"
+                        android:text="Temukan outlet yang klop di hati dengan pencarian lebih spesifik!"
+                        android:textColor="@color/primaryText"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <!--<View-->
+                        <!--android:id="@+id/lineSeparator2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="2dp"-->
+                        <!--android:layout_below="@+id/tvBanner2"-->
+                        <!--android:background="@color/colorPrimary" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_perawatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                        android:textColorHint="#999"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_weight="1"
+                        android:id="@+id/autoTextTreatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        app:met_helperText="Ketik perawatan yang Anda cari, misalnya: 'Potong rambut' "
+                        android:textSize="14sp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/primaryText"
+                        android:hint="Nama perawatan">
+                        <requestFocus />
+                        </com.rengwuxian.materialedittext.MaterialEditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_kategori"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false">
+
+                                <EditText
+                                    android:id="@+id/edKategoriFiltered"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#999"
+                                    android:layout_marginTop="0dp"
+                                    android:focusable="false"
+                                    android:text="Apa saja"
+                                    android:hint="Kategori"
+                                    android:singleLine="true"
+                                    android:textColor="@color/primaryText"
+                                    android:textSize="14sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone"
+                                android:id="@+id/tvKatFiltered"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_fasilitas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:enabled="false">
+                                <EditText
+                                    android:id="@+id/edFasilitasFiltered"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#999"
+                                    android:focusable="false"
+                                    android:hint="Fasilitas"
+                                    android:singleLine="true"
+                                    android:text="Apa saja"
+                                    android:textColor="@color/primaryText"
+                                    android:textSize="14sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <TextView
+                                android:id="@+id/tvFasFiltered"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_hari"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:enabled="false">
+
+                                <EditText
+                                    android:id="@+id/edHariTerpilih"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#999"
+                                    android:focusable="false"
+                                    android:hint="Hari"
+                                    android:text="Apa saja"
+                                    android:singleLine="true"
+                                    android:textColor="@color/primaryText"
+                                    android:textSize="14sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_hargamin"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:enabled="false">
+
+                                <EditText
+                                    android:id="@+id/edHargaMin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#999"
+                                    android:focusable="false"
+                                    android:text="Berapa saja"
+                                    android:hint="Harga Terendah"
+                                    android:singleLine="true"
+                                    android:textColor="@color/primaryText"
+                                    android:textSize="14sp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" - "
+                                android:textSize="38dp"/>
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_hargamax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:enabled="false">
+
+                                <EditText
+                                    android:id="@+id/edHargaMax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#999"
+                                    android:focusable="false"
+                                    android:text="Berapa saja"
+                                    android:hint="Harga Tertinggi"
+                                    android:singleLine="true"
+                                    android:textColor="@color/primaryText"
+                                    android:textSize="14sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryText"
+                            android:id="@+id/minValue"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryText"
+                            android:id="@+id/maxValue"
+                           />
+                    </LinearLayout>
+
+                        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+                            xmlns:rsb="http://schemas.android.com/apk/res-auto"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/rangeSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryText"
+                            rsb:absoluteMaxValue="5.0"
+                            rsb:absoluteMinValue="0.0"
+                            />
+
+                    </LinearLayout>
+
+                    <!--</LinearLayout>-->
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_yellow2"
+        android:text="Cari"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

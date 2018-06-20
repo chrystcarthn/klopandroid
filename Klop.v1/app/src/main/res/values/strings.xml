@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">Klop</string>
+    <string name="register">di sini.</string>
+    <string name="alreadyuser">di sini.</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_utama">Utama</string>
+    <string name="nav_profil">Profil</string>
+    <string name="nav_kelolasalon">Kelola Salon</string>
+    <string name="nav_notifikasi">Notifications</string>
+    <string name="nav_pengaturan">Pengaturan</string>
+    <string name="nav_tentangkami">Tentang Kami</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Utama</item>
+        <item>Profil</item>
+        <item>Kelola Salon</item>
+        <item>Notifikasi</item>
+        <item>Pengaturan</item>
+    </string-array>
+
+    <string name="activity_title_tentangkami">Tentang Kami</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_keluar">Keluar</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="action_pengaturan">Pengaturan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Form Add Store -->
+    <string name="page_name">Data Umum</string>
+    <string name="hint_namaoutlet">Nama Outlet</string>
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+    <string name="hint_bannerText1">Informasi umum akan memudahkan calon pelanggan menemukan outlet Anda</string>
+    <string name="hint_deskripsi">Deskripsi (Opsional)</string>
+    <string name="hint_telp">Telepon</string>
+    <string name="hint_alamat">Alamat</string>
+    <string name="hint_latitude">Latitude</string>
+    <string name="hint_longitude">Longitude</string>
+    <string name="hint_pengelola">Nama Pengelola di Tempat</string>
+    <string name="hint_hppengelola">No. Hp Pengelola</string>
+    <string name="hint_ktppengelola">No. KTP Pengelola</string>
+    <string name="hint_uploadktp">Foto KTP</string>
+    <string name="hint_btnuploadktp">Unggah Foto</string>
+    <string name="hint_npwp">No. NPWP</string>
+
+
+    <string name="btn_createoutlet">Lanjut</string>
+    <string name="btn_map">Tetapkan Lokasi di Peta</string>
+    <string name="err_msg_nama">Masukan nama store Anda.</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_telepon">Masukan nomor telepon store Anda.</string>
+    <string name="err_msg_alamat">Masukan alamat store Anda.</string>
+    <string name="err_msg_namapengelola">Masukan nama pengelola. </string>
+    <string name="err_msg_hppengelola">Masukan no. hp pengelola. </string>
+
+    <string name="username">User_Name_Here</string>
+
+    <string name="pick_place">Choose a place</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+
+    <string name="lorem">
+		Testingggggggggggggg
+        aaaaaaaaaaa
+	</string>
+    <string name="title_mup_name">Saúl Molinero</string>
+    <string name="subtitle_mup">Here I am with a subtitle</string>
+    <string name="header_phone">Telepon</string>
+    <string name="header_schedule">Jam Buka</string>
+    <string name="header_facility">Fasilitas</string>
+    <string name="header_stylist">Stylist</string>
+    <string name="header_category">Kategori</string>
+    <string name="header_treatment">Perawatan</string>
+
+    <string-array name="jam_arrays">
+        <item>HH</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="menit_arrays">
+        <item>MM</item>
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
+    <string-array name="hari_arrays">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+
+    <string-array name="hari2_arrays">
+        <item>Setiap hari</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+
+    <string-array name="hrgmax_arrays">
+        <item>50.000</item>
+        <item>100.000</item>
+        <item>150.000</item>
+        <item>200.000</item>
+        <item>250.000</item>
+        <item>300.000</item>
+        <item>350.000</item>
+        <item>400.000</item>
+        <item>450.000</item>
+        <item>500.000</item>
+        <item>550.000</item>
+        <item>600.000</item>
+        <item>650.000</item>
+        <item>700.000</item>
+        <item>750.000</item>
+        <item>800.000</item>
+        <item>850.000</item>
+        <item>900.000</item>
+        <item>950.000</item>
+        <item>1.000.000</item>
+        <item>1.250.000</item>
+        <item>1.500.000</item>
+        <item>1.750.000</item>
+        <item>2.000.000</item>
+    </string-array>
+
+    <string-array name="hrgmin_arrays">
+        <item>0</item>
+        <item>50.000</item>
+        <item>100.000</item>
+        <item>150.000</item>
+        <item>200.000</item>
+        <item>250.000</item>
+        <item>300.000</item>
+        <item>350.000</item>
+        <item>400.000</item>
+        <item>450.000</item>
+        <item>500.000</item>
+        <item>550.000</item>
+        <item>600.000</item>
+        <item>650.000</item>
+        <item>700.000</item>
+        <item>750.000</item>
+        <item>800.000</item>
+        <item>850.000</item>
+        <item>900.000</item>
+        <item>950.000</item>
+        <item>1.000.000</item>
+        <item>1.250.000</item>
+        <item>1.500.000</item>
+        <item>1.750.000</item>
+        <item>2.000.000</item>
+    </string-array>
+
+    <style name="MooTheme" parent="android:Theme">
+        <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+    </style>
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#757575</item>
+    </style>
+
+    <string name="show_pwd">Lihat kata sandi</string>
+    <string name="hide_pwd">Sembunyikan</string>
+    <string name="nav_filter">Cari spesifik</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="title_activity_tabbed_menu">Awal</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

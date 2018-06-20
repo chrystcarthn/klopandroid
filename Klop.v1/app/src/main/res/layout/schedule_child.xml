@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_jadwal"
+            >
+
+            <TextView
+                android:id="@+id/tvChild"
+                android:layout_margin="16dp"
+                android:textColor="@color/secondaryText"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <!-- ========================= cv S E N I N ================================= -->
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="0dp"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--app:cardBackgroundColor="@android:color/white"-->
+            <!--app:cardCornerRadius="2dp"-->
+            <!--app:cardPreventCornerOverlap="false"-->
+            <!--app:cardUseCompatPadding="true"-->
+            <!--app:contentPadding="5dp"-->
+            <!--app:cardElevation="2dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/itemJadwal"-->
+                <!--android:background="@drawable/background_rectangle">-->
+                <!--&lt;!&ndash; ========================= layout S E N I N ================================= &ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:id="@+id/itemJadwalSenin">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariSenin"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Senin"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbSenin"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:id="@+id/lspWaktuBukaSenin">-->
+                            <!--<Spinner-->
+                                <!--android:id="@+id/spJamBukaSenin"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                                <!--android:entries="@array/jam_arrays"-->
+                                <!--/>-->
+
+                            <!--<Spinner-->
+                                <!--android:id="@+id/spMenitBukaSenin"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:entries="@array/menit_arrays"-->
+                                <!--android:prompt="@array/menit_arrays"/>-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:id="@+id/lspWaktuTutupSenin">-->
+                            <!--<Spinner-->
+                                <!--android:id="@+id/spJamTutupSenin"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                                <!--android:entries="@array/jam_arrays"-->
+                                <!--/>-->
+
+                            <!--<Spinner-->
+                                <!--android:id="@+id/spMenitTutupSenin"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:entries="@array/menit_arrays"-->
+                                <!--android:prompt="@array/menit_arrays"/>-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalSenin"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; ========================= layout S E L A S A ================================= &ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator3"-->
+                    <!--android:id="@+id/itemJadwalSelasa">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariSelasa"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Selasa"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbSelasa"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka2"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaSelasa"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaSelasa"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup2"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupSelasa"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupSelasa"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalSelasa"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; =================================== cv R A B U ====================================&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator4"-->
+                    <!--android:id="@+id/itemJadwalRabu">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariRabu"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Rabu"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbRabu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka3"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaRabu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaRabu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup3"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupRabu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupRabu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalRabu"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; ==============================klopcv K A M I S ============================== &ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator5"-->
+                    <!--android:id="@+id/itemJadwalKamis">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariKamis"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Kamis"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbKamis"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka4"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaKamis"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaKamis"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup4"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupKamis"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupKamis"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalKamis"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; ========================================= cv J U M A T ================================= &ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator6"-->
+                    <!--android:id="@+id/itemJadwalJumat">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariJumat"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Jumat"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbJumat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka5"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaJumat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaJumat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup5"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupJumat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupJumat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalSelasa"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; ======================================= cv S A B T U ======================================&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator6"-->
+                    <!--android:id="@+id/itemJadwalSabtu">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariSabtu"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Sabtu"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbSabtu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka6"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaSabtu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaSabtu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup6"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupSabtu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupSabtu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+                <!--<View-->
+                    <!--android:id="@+id/lineSeparator8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_below="@+id/itemJadwalSabtu"-->
+                    <!--android:background="#aeafaf" />-->
+
+                <!--&lt;!&ndash; ========================================== cv M I N G G U ================================= &ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_below="@id/lineSeparator7"-->
+                    <!--android:id="@+id/itemJadwalMinggu">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutHariMinggu"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Minggu"-->
+                            <!--android:paddingTop="5dp"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/cbMinggu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="Buka"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:textStyle="italic" />-->
+                    <!--</LinearLayout>-->
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuBuka7"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Buka"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamBukaMinggu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitBukaMinggu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--android:id="@+id/layoutWaktuTutup7"-->
+                        <!--android:layout_marginTop="0dp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_width="170dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Waktu Tutup"-->
+                            <!--android:textSize="14dp"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spJamTutupMinggu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:entries="@array/jam_arrays"-->
+                            <!--/>-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/spMenitTutupMinggu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/place_autocomplete_prediction_secondary_text"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:entries="@array/menit_arrays"-->
+                            <!--android:prompt="@array/menit_arrays"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="0dp"-->
+                            <!--android:paddingRight="5dp"-->
+                            <!--android:orientation="horizontal">-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

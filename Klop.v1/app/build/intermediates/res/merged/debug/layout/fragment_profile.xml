@@ -1,0 +1,269 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="appdeveloper.klop.klop.Fragment.ProfileFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/graylight"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:id="@+id/layoutheader"
+                   android:layout_width="match_parent"
+                   android:layout_height="220dp"
+                   android:scaleType="centerCrop"
+                   android:background="@drawable/profile_banner"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <!--<ImageView-->
+                       <!--android:layout_width="match_parent"-->
+                       <!--android:layout_height="275dp"-->
+                       <!--android:scaleType="fitXY"-->
+                       <!--android:src="@drawable/profile_header"-->
+                       <!--android:layout_alignParentTop="false"-->
+                       <!--android:layout_alignParentLeft="false"-->
+                       <!--android:layout_alignParentStart="true"-->
+                       <!--android:id="@+id/login_header"-->
+                       <!--/>-->
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rlImageProf"
+                    >
+
+
+                       <com.joooonho.SelectableRoundedImageView
+                           android:id="@+id/imgUser"
+                           android:layout_width="120dp"
+                           android:layout_height="120dp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:layout_gravity="center"
+                           android:scaleType="centerCrop"
+                           android:src="@mipmap/userdefault"
+                           app:sriv_border_color="#FFF"
+                           app:sriv_border_width="2dp"
+                           app:sriv_oval="true" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@+id/imgUser"
+                           android:gravity="center_horizontal"
+                           android:id="@+id/tvUser"
+                           android:layout_marginLeft="25dp"
+                           android:layout_marginTop="20dp"
+                           android:text="Ganti foto"
+                           android:textColor="@color/colorPrimaryDark"
+                           android:textSize="16sp"
+                           android:textStyle="bold" />
+                   </RelativeLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/layoutform"
+                   android:layout_below="@+id/layoutheader"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+
+
+                   <android.support.design.widget.TextInputLayout
+
+                       android:id="@+id/nameWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="10dp"
+                       android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                       android:textColorHint="#999"
+                       app:errorTextAppearance="@style/error_appearance">
+
+                       <com.rengwuxian.materialedittext.MaterialEditText
+                           android:id="@+id/edName"
+                           app:met_helperText="Nama akan digunakan saat Anda memberi ulasan"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                           android:drawablePadding="5dp"
+                           android:paddingBottom="0dp"
+                           android:paddingTop="0dp"
+                           android:ems="10"
+                           android:inputType="textPersonName"
+                           android:hint="Nama"
+                           android:paddingLeft="3dp"
+                           android:singleLine="true"
+                           android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                           android:textColorHint="#999"
+                           android:textCursorDrawable="@null"
+                           android:textSize="14sp" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_below="@+id/nameWrapper"
+                       android:id="@+id/emailWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="0dp"
+                       android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                       android:textColorHint="#999"
+                       app:errorTextAppearance="@style/error_appearance">
+
+                       <com.rengwuxian.materialedittext.MaterialEditText
+                           android:id="@+id/edEmail"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                           android:drawablePadding="5dp"
+                           android:paddingBottom="0dp"
+                           android:paddingTop="0dp"
+                           android:inputType="textEmailAddress"
+                           android:ems="10"
+                           android:hint="Email"
+                           android:paddingLeft="3dp"
+                           android:singleLine="true"
+                           android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                           android:textColorHint="#999"
+                           android:textCursorDrawable="@null"
+                           android:textSize="14sp" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_below="@+id/emailWrapper"
+                       android:id="@+id/passWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="0dp"
+                       android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                       android:textColorHint="#999"
+                       app:errorTextAppearance="@style/error_appearance">
+
+                       <com.rengwuxian.materialedittext.MaterialEditText
+                           android:id="@+id/edPassword"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                           android:drawablePadding="5dp"
+                           android:paddingBottom="0dp"
+                           android:paddingTop="0dp"
+                           android:ems="10"
+                           android:inputType="textPassword"
+                           android:hint="Password"
+                           android:paddingLeft="3dp"
+                           android:singleLine="true"
+                           android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                           android:textColorHint="#999"
+                           android:textCursorDrawable="@null"
+                           android:textSize="14sp" />
+                   </android.support.design.widget.TextInputLayout>
+
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_below="@+id/passWrapper"
+                       android:id="@+id/phoneWrapper"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="0dp"
+                       android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                       android:textColorHint="#999"
+                       app:errorTextAppearance="@style/error_appearance">
+
+                       <com.rengwuxian.materialedittext.MaterialEditText
+                           android:id="@+id/edPhone"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                           android:drawablePadding="5dp"
+                           android:paddingBottom="0dp"
+                           android:paddingTop="0dp"
+                           android:ems="10"
+                           android:inputType="phone"
+                           android:paddingLeft="3dp"
+                           android:hint="No. Hp"
+                           android:singleLine="true"
+                           android:textColor="@color/place_autocomplete_prediction_secondary_text"
+                           android:textColorHint="#999"
+                           android:textCursorDrawable="@null"
+                           android:textSize="14sp" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                   <Button
+                       android:id="@+id/btnOutlet"
+                       android:textAllCaps="false"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="false"
+                       android:layout_alignParentEnd="false"
+                       android:layout_alignParentStart="false"
+                       android:layout_alignParentTop="false"
+                       android:layout_below="@+id/layoutform"
+                       android:layout_marginBottom="0dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@null"
+                       android:drawableLeft="@mipmap/salon"
+                       android:text="   Kelola Outlet Saya"
+                       android:textColor="@color/secondaryText2"
+                       android:textSize="16sp"
+                       />
+
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       android:textAllCaps="false"
+                       android:text=" Keluar"
+                       android:drawableLeft="@mipmap/exit"
+                       android:id="@+id/btnKeluar"
+                       android:background="@null"
+                       android:layout_below="@+id/btnOutlet"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginBottom="20dp"
+                       android:layout_alignParentEnd="false"
+                       android:layout_alignParentStart="false"
+                       android:layout_alignParentBottom="false"
+                       android:layout_alignParentTop="false"
+                       android:layout_marginTop="0dp"
+                       android:textColor="@color/secondaryText2"/>
+                   </LinearLayout>
+               </LinearLayout>
+
+
+
+
+
+
+           </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

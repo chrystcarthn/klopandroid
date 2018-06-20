@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="appdeveloper.klop.klop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/klop"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+
+        <activity
+            android:name=".Activity.TabbedMenu"
+            android:theme="@style/AppTheme.Launcher"
+            android:label="Klop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".Activity.SplashScreen"-->
+            <!--android:screenOrientation="portrait">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name=".Activity.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Login"
+            android:screenOrientation="portrait" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity
+            android:name=".Activity.AddStore"
+            android:label="Mendaftarkan Outlet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ShowDetailStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AddStoreDetailInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FilteredSearching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchingResult"
+            android:screenOrientation="portrait" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--<activity-->
+            <!--android:name=".Activity.TabbedMenu"-->
+            <!--android:label="Utama"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".Activity.FullScreenPhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ShowDirection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AddReviewRate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PickSchedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CreateMyBooking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MyStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DetailBookedItem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReservationRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DetailReservationItem"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.StoreInMap" />
+        <activity android:name=".Activity.StoreSettings" />
+        <activity android:name=".Activity.UbahInformasiUmum" />
+        <activity android:name=".Activity.Report" />
+        <activity android:name=".Activity.ManageCategory" />
+        <activity android:name=".Activity.ManageFacility" />
+        <activity android:name=".Activity.ManageTreatment" />
+        <activity android:name=".Activity.ManagePhoto" />
+        <activity android:name=".Activity.FullScreenMngPhoto" />
+        <activity android:name=".Activity.ManageNews" />
+        <activity android:name=".Activity.ManageSchedule" />
+        <activity android:name=".Activity.DetailReportReservasi" />
+        <activity android:name=".Activity.DetailReportRating"></activity>
+    </application>
+
+</manifest>

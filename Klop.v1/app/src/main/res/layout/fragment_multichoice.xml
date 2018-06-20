@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="appdeveloper.klop.klop.Fragment.CategoryFragment">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_checkbox"
+                android:id="@+id/recyclerviewCategory"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="tess"
+        android:paddingTop="4dp"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:id="@+id/tvTempIdCat"/>
+
+    <Button
+        android:id="@+id/btnSetKategori"
+        android:layout_below="@id/recyclerviewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btn_selector_yellow"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

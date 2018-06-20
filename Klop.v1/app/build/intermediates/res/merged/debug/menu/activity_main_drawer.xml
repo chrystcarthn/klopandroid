@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/nav_utama" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_account_box_black_24dp"
+            android:title="@string/nav_profil" />
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@mipmap/ic_store_black_24dp"
+            android:title="@string/nav_kelolasalon" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@mipmap/ic_notifications_black_24dp"
+            android:title="@string/nav_notifikasi" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="@string/nav_pengaturan" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_tentangkami" />
+
+        </menu>
+    </item>
+
+</menu>

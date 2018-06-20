@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\KULIAH\Smt8\MasterSkripsi\Android\App\v3.ALPHA.1.3\Klop.v1\app\libs\PhotoUtil.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caf49e92eae4ca2805d530a92cb4777c1ef53f53">
+        <dex dex="D:\KULIAH\Smt8\MasterSkripsi\Android\App\v3.ALPHA.1.3\Klop.v1\app\build\intermediates\transforms\dex\debug\folders\1000\2\PhotoUtil_59f68e07f5a3317aa9851c5ddd3b3c8ffd5d3c8e\classes.dex" />
+    </item>
+
+</items>

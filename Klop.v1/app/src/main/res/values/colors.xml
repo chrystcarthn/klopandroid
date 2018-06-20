@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#2fafd3</color>-->
+    <!--<color name="colorPrimary">#49b3e8</color>-->
+    <color name="colorPrimary">#2b9fdc</color>
+    <!--<color name="colorPrimary">#2fafd3</color>-->
+    <color name="colorPrimaryDark">#2c93c7</color>
+    <color name="colorPrimaryDarker">#1a77a6</color>
+    <color name="blue">#0770cd</color>
+    <!--<color name="colorAccent">#2fafd3</color>-->
+    <color name="colorAccent">#2fafd3</color>
+    <color name="lightBlue">#b0e5f4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackLighter">#30404D</color>
+    <color name="black">#131D24</color>
+
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="red">#d9292c</color>
+    <color name="closed">#c62e2c</color>
+    <color name="yellow">#F5b936</color>
+    <color name="gold">#f1af15</color>
+    <color name="orange">#f96d01</color>
+    <color name="green">#39c63f</color>
+    <color name="open">#0d9c20</color>
+    <color name="colorAccent1">#ff4081</color>
+    <color name="lightpurple">#ae90ef</color>
+    <color name="purple">#a364e1</color>
+    <color name="black_25_transparent">#40000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="primaryText">#353535</color>
+    <color name="secondaryText">#6b6b6b</color>
+    <color name="secondaryText2">#878787</color>
+    <color name="grey">#9f9d9d</color>
+
+</resources>

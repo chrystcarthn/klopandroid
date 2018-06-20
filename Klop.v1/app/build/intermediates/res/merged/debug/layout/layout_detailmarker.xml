@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/map_wrapper">
+
+        <!--<planner.trip.tripp.Utils.CustomMapView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/store_map"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/layoutDetails"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/tvIdStore"
+                android:text="id_store"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlNmStore"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNmStore"
+                    android:textColor="@color/white"
+                    android:text="New Topsy"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"/>
+
+                <!--<ImageView-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@color/pinkRed"-->
+                    <!--android:layout_width="45dp"-->
+                    <!--android:layout_height="44dp"-->
+                    <!--android:id="@+id/btnClose"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:src="@drawable/error"-->
+                    <!--android:scaleType="fitStart"/>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutContentDetails"
+                android:background="@color/white"
+                android:layout_below="@+id/rlNmStore">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlAddress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp">
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:id="@+id/imgAddress"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:src="@drawable/directions"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="JL tambak bayan 8 No 6b, Babarsari"
+                        android:id="@+id/txtAddressMap"
+                        android:paddingBottom="5dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/lineSeparator"
+                    android:layout_below="@+id/rlAddress" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutRate"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/lineSeparator">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="5 reviews"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:visibility="visible"
+                        android:textColor="@color/white"
+                        android:id="@+id/txtratingmap"/>
+
+                    <TextView
+                        android:layout_below="@+id/txtratingmap"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="9.8/10"
+                        android:visibility="visible"
+                        android:id="@+id/txtRating"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:padding="15dp"
+                        android:id="@+id/norateyet"
+                        android:textSize="18sp"
+                        android:layout_centerInParent="true"
+                        android:text="Belum ada Rating dari Pengguna"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btngodetails"
+
+                android:background="@color/yellow"
+                android:layout_below="@+id/layoutContentDetails">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Detil Tempat >"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="appdeveloper.klop.klop.Activity.AddReviewRate">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Buat ulasan" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+            <TextView
+                android:id="@+id/tvNmStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#999"
+                android:text="Salon XXX"
+                android:textColor="@color/primaryText"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#999"
+                    android:layout_marginLeft="3dp"
+                    android:text="Nilai pengalaman Anda"
+                    android:textColor="@color/secondaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#999"
+                    android:layout_marginLeft="3dp"
+                    android:text="Sentuh bintang untuk menilai"
+                    android:textColor="@color/secondaryText2"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/llRating">
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnRate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star1"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_star_24dp"/>
+
+
+                    <ImageButton
+                        android:id="@+id/btnRate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star2"
+                        android:padding="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_star_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btnRate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star3"
+                        android:padding="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_star_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btnRate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star4"
+                        android:padding="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_star_24dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btnRate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/star5"
+                        android:padding="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_star_24dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                android:id="@+id/tv1"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#999"
+                android:layout_marginLeft="3dp"
+                android:text="Mulai membuat ulasan Anda"
+                android:textColor="@color/secondaryText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/edUlasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#999"
+                        android:hint="Ceritakan tentang kenyamanan tempat atau pelayanan"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/primaryText"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv3"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:backgroundTint="#999"-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:text="Anda juga boleh menambahkan foto yang berkaitan dengan ulasan Anda"-->
+                    <!--android:textColor="@color/secondaryText"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutfoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+
+                        <ImageButton
+                            android:id="@+id/btnDeltPhoto1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_alignEnd="@+id/imgPhotoRev1"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/star0"
+                            android:src="@drawable/ic_close_black_24dp" />
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/imgPhotoRev1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="left"
+                            android:background="@drawable/background_rectangle"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_circle_24dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"
+                        android:id="@+id/layoutfoto2"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnDeltPhoto2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_alignEnd="@+id/imgPhotoRev2"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/star0"
+                            android:src="@drawable/ic_close_black_24dp" />
+
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/imgPhotoRev2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="left"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_circle_24dp"
+                            android:background="@drawable/background_rectangle"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"
+                        android:id="@+id/layoutfoto3"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnDeltPhoto3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_alignEnd="@+id/imgPhotoRev3"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/star0"
+                            android:src="@drawable/ic_close_black_24dp" />
+
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/imgPhotoRev3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="left"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_circle_24dp"
+                            android:background="@drawable/background_rectangle"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"
+                        android:id="@+id/layoutfoto4"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnDeltPhoto4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_alignEnd="@+id/imgPhotoRev4"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/star0"
+                            android:src="@drawable/ic_close_black_24dp" />
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/imgPhotoRev4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="left"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_circle_24dp"
+                            android:background="@drawable/background_rectangle"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendReview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical|bottom"
+
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_selector_yellow2"
+        android:text="Kirim"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
